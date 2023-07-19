@@ -1,0 +1,75 @@
+
+
+.logo{
+    width: 100%;
+}
+.logo1{
+    height: 30%;
+    width: 70%;
+}
+header,footer{
+    background-color: 
+    #146473;
+}
+.input-group-text
+      {
+          text-align: center;
+          height: 38px;
+          font-size:x-large;
+          background-color: #21b397;
+          color: white;
+      }
+.search {
+    color: white !important;
+    font-size: 20px;
+}  
+.badge{
+    font-size: 10px !important;
+}
+
+@media screen and (max-width: 1048px) and (min-width: 320px){
+    .sign-in{
+       font-size: 12px;
+    }
+} 
+.active-category {
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight:200;
+    background:linear-gradient(to right,#1eb592 0%,#47c96d 100%);
+    border: none;
+    height: 40px;
+}
+.topnav a
+ {
+    padding: 9px 15px;
+    display: inline;
+    height: 40px; 
+ }
+.topnav a:hover
+ {
+    background: linear-gradient(to right,#1db593 0%, #47c96c 100%)  ;
+    border-radius: 5px;
+ }
+.btn{
+    background: rgb(30,181,146);
+background: linear-gradient(90deg, rgba(30,181,146,1) 0%, rgba(73,202,107,1) 100%);
+color: white;
+}
+
+.card{
+    border-radius: 25px;
+    
+}
+    
+.deliverybutton{
+    border-radius:20px ;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 21%;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script>
+      <title>Cannabid Exchange</title>
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/style.css" />
+
+   </head>
+   <body>
+      <div class="container ">
+         <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="row pt-3">
+                        <div class="col-sm-2 col-md-2 col-lg-2">
+                            <img src="./assets/logo.png" class="logo" alt="logo">
+                        </div>
+                        <div class=" col-sm-2 col-md-2 col-lg-2">
+                            <div class="text-white d-flex">
+                                <div class="mt-3 px-2"><i class="fa fa-thin fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="d-flex flex-column sign-in">
+                                        <small class="fw-lighter">Hello</small>
+                                        <small class="fw-lighter">Select your address</small>                    
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-sm-5 col-md-5 col-lg-6">
+                            <div class="input-group mb-3 ">
+                                <input type="text" placeholder="Search by category,product name...." name="search" class="form-control rounded-start-2" >
+                                <div class="input-group-append">
+                                   <span class="input-group-text rounded-end-2 rounded-start-0 p-0">    
+                                   <button class="btn" type="button">
+                                   <i class="fa fa-search search" ></i>
+                                   </button>                                                       
+                                   </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-2">
+                            <div class="d-flex gap-3 ">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-row gap-3">
+                                        <div class="text-white d-flex flex-column sign-in"> 
+                                            <small class="fw-lighter sign-in">Hello Sign in / </small>
+                                            <div class="dropdown drop fw-lighter">
+                                                <a class="text-decoration-none text-white dropdown-toggle fw-lighter" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+                                                <small>Account</small></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Page1</a>
+                                                    <a class="dropdown-item" href="#">Page2</a>
+                                                    <a class="dropdown-item" href="#">Page3</a>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="text-white d-flex align-items-center gap-2 position-relative">
+                                            <i class="fa fa-sharp fa-light fa-cart-shopping fa-xl ">
+                                                <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                                    3
+                                                    <span class="visually-hidden">unread messages</span>
+                                                  </span>
+                                            </i>
+                                            <p class="mb-0">Cart</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>     
+            </nav>
+            <div class="container">
+                <div class="row">
+                   <div class="col">
+                      <div class="topnav">
+                         <button class="active-category" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>&nbsp;All Categories</button>
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Accessories</a>
+                            <a class="dropdown-item" href="#">Apparels</a>
+                            <a class="dropdown-item" href="#">CBD</a>
+                            <a class="dropdown-item" href="#">Edibels</a>
+                            <a class="dropdown-item" href="#">Flowers</a>
+                            <a class="dropdown-item" href="#">Marijuana Concentrates</a>
+                            <a class="dropdown-item" href="#">MarijuanaPlants</a>
+                            <a class="dropdown-item" href="#">Pre-Rolls</a>
+                            <a class="dropdown-item" href="#">Tinctures</a>
+                            <a class="dropdown-item" href="#">Vaporizers</a>
+        
+                         </div>
+                         <a href="#" class="text-white text-decoration-none text-nowrap">Accessories</a> 
+                         <a href="#" class="text-white text-decoration-none text-nowrap">Apparels</a> 
+                         <a href="#" class="text-white text-decoration-none text-nowrap">Marijuana Concentrates</a> 
+                         <a href="#" class="text-white text-decoration-none text-nowrap">About us</a> 
+                         <a href="#" class="text-white text-decoration-none text-nowrap">Contact us</a>                   
+                      </div>
+                   </div>
+                </div>
+             </div>   
+        </header>
+         <div class="row container  mt-5">
+            <div class="col-lg-9 col-sm-12">
+               <div class="row">
+                  <div class="col-lg-12 col-sm-12">
+                     <div class="card px-4">
+                        <div class="row mt-2 ">
+                           <div class="col-lg-10 col-sm-7">
+                              <h4>Select a delivery address</h4>
+                           </div>
+                           <div class="col-lg-2 col-sm-5 justify-content-end">
+                              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Add New</button>
+                           </div>
+                           <!-- The Modal -->
+<div class="modal" id="myModal">
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+ 
+       <!-- Modal Header -->
+       <div class="modal-header">
+         <h4 class="modal-title">Add Address</h4>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+       </div>
+ 
+       <!-- Modal body -->
+       <div class="modal-body">
+         <div class="d-flex justify-content-between">
+            <div class="p-2 form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="First Name">
+               <label for="floatingInput">First Name</label></div>
+            <div class="p-2  form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="Last Name">
+               <label for="floatingInput">Last Name</label></div>
+         </div>
+         <div class="row p-2">
+            <div class=" form-floating">  <input type="password" class="form-control" id="floatingInput" placeholder="Password">
+               <label for="floatingInput">Password</label></div>
+         </div>
+         <div class="d-flex justify-content-between">
+            <div class="p-2 form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="Pincode">
+               <label for="floatingInput">Pincode</label></div>
+            <div class="p-2  form-floating">  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+               <option selected>Open this select menu</option>
+               <option value="1">One</option>
+               <option value="2">Two</option>
+               <option value="3">Three</option>
+             </select>
+             <label for="floatingSelect">Address Type</label></div>
+         </div>
+         <div class="row p-2">
+            <div class=" form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="Password">
+               <label for="floatingInput">Flat,House no,Building,Company</label></div>
+         </div>
+         <div class="row p-2">
+            <div class=" form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="Password">
+               <label for="floatingInput">Area,Street,Sector</label></div>
+         </div>
+         <div class="d-flex justify-content-between">
+            <div class="p-2 form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="First Name">
+               <label for="floatingInput">Landmark</label></div>
+            <div class="p-2  form-floating">  <input type="name" class="form-control" id="floatingInput" placeholder="Last Name">
+               <label for="floatingInput">Town/City</label></div>
+         </div>
+
+
+       </div>
+    
+ 
+       <!-- Modal footer -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+       </div>
+ 
+     </div>
+   </div>
+ </div>
+ 
+                        </div>
+                        <div class="row mt-2">
+                           <div class="col-lg-6 col-sm-12">
+                              <div class="card shadow p-2">
+                                 <div class="row">
+                                    <div class="col-9">
+                                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          <h4>Jack Jennas</h4>
+                                       </label>
+                                    </div>
+                                    <div class="col-3">
+                                       <span class="badge bg-secondary">Home</span></h6>
+                                    </div>
+                                 </div>
+                                 <div style="margin-left: 30px;">
+                                    <p>Address:8426 James Lane south san</p>
+                                    <p>Francisco, CA 94080</p>
+                                    <p>Pin Code: +380</p>
+                                    <p>Phone: +380 (0564) 53 - 29 - 68</p>
+                                    <a href="#" class="link-success">Edit</a> <span>|</span> <a href="#" class="link-success">Delete</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-6 col-sm-12">
+                              <div class="card shadow p-2">
+                                 <div class="row">
+                                    <div class="col-9">
+                                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          <h4>Jack Jennas</h4>
+                                       </label>
+                                    </div>
+                                    <div class="col-3">
+                                       <span class="badge bg-secondary">Office</span></h6>
+                                    </div>
+                                 </div>
+                                 <div style="margin-left: 30px;">
+                                    <p>Address:8426 James Lane south san</p>
+                                    <p>Francisco, CA 94080</p>
+                                    <p >Pin Code: +380</p>
+                                    <p>Phone: +380 (0564) 53 - 29 - 68</p>
+                                    <a href="#" class="link-success">Edit</a> <span>|</span> <a href="#" class="link-success">Delete</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row justify-content-end mt-5 mb-3">
+                           <div class="col-lg-4 col-sm-12">
+                              <button type="button" class="btn deliverybutton">Return to Shopping</button>
+                              <button type="button" class="btn deliverybutton"><a href="paymentoption.html" style="color: white; text-decoration: none ;">Payment</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+               <div class="row">
+                  <div class="card">
+                     <div class="row mt-2">
+                        <h4>Order Summary</h4>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-6">
+                           <h6>Melatonin x 1</h6>
+                           <h6>Bird Hearts x 1</h6>
+                           <h6>Men T-shirt x 1</h6>
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                           <h6 > $960.00</h6>
+                           <h6> $250.00</h6>
+                           <h6> $200.00</h6>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-6">
+                           <h6>Subtotal</h6>
+                           <h6>Discount</h6>
+                           <h6>Shipping</h6>
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                           <h6 > $1,410.00</h6>
+                           <h6 style="color: green;">(-)61.00</h6>
+                           <h6> $50.00</h6>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="row">
+                        <div class="col-6">
+                           <h6>Total (USD)</h6>
+                        </div>
+                        <div class="col-6" style="text-align: end;">
+                           <h6 > $1399.00</h6>
+                        </div>
+                     </div>
+                     <p style="color: green;">You will save $61 on this order</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row container mt-4 mb-4">
+            <div class="col-lg-4 col-sm-12">
+               <div class="card shadow p-3">
+                  <div class="row">
+                     <h5>Book By Phone</h5>
+                  </div>
+                  <div class="row">
+                     <div class="col-2">
+                        <iconify-icon icon="la:mobile" width="50" height="50"  style="color: #11676a;"></iconify-icon>
+                     </div>
+                     <div class="col-10">
+                        <h6>+1 123-456-7890</h6>
+                        <p>Booking time:08:00 AM-10:00 PM</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <div class="card shadow p-3">
+                  <div class="row">
+                     <h5>Give Your Feedback</h5>
+                  </div>
+                  <div class="row">
+                     <div class="col-2">
+                        <iconify-icon icon="fluent:mail-28-filled" width="50" height="50"  style="color: #11676a;"></iconify-icon>
+                     </div>
+                     <div class="col-10">
+                        <h6>feedback@canabid.com</h6>
+                        <p>Help us improve!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <div class="card shadow p-3">
+                  <div class="row">
+                     <h5>Service and Support</h5>
+                  </div>
+                  <div class="row">
+                     <div class="col-2">
+                        <iconify-icon icon="streamline:interface-help-customer-support-1-customer-headset-help-microphone-phone-support" width="50" height="50"  style="color: #11676a;"></iconify-icon>
+                     </div>
+                     <div class="col-10">
+                        <h6>Support Centre</h6>
+                        <p>Get your doubts cleared</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="py-3">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <img src="./assets/logo.png" class="logo1" alt="logo"><br>
+                    <small class="text-white fw-lighter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt vel pariatur corporis odit non consequatur id accusantium. Doloremque distinctio expedita culpa aliquid repudiandae, optio quis modi nemo impedit architecto accusamus!</small>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column pt-5 pt-md-3 gap-2">
+                    <h5 class="text-white">Quick Links</h5>
+                    <a href="#" class="text-decoration-none text-white fw-lighter">Seller registration</a>
+                    <a href="#" class="text-decoration-none text-white fw-lighter">Terms and conditions</a>
+                    <a href="#" class="text-decoration-none text-white fw-lighter">About us</a>
+                    <a href="#" class="text-decoration-none text-white fw-lighter">Contact us</a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 d-flex flex-column pt-5 pt-md-3 gap-2">
+                    <h5 class="text-white">Find us</h5>
+                    <a href="#" class="text-decoration-none text-white fw-lighter"><i class=" fa fa-solid fa-envelope" style="color: #ffffff;"></i> support@canabid.com</a>
+                    <a href="#" class="text-decoration-none text-white fw-lighter"><i class="fa fa-thin fa-phone" style="color: #ffffff;"></i> +1 123-456-7890</a>
+                    
+                    <h5 class="text-white">Connect with us</h5>
+                    <div class="d-flex">
+                    <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;margin-right: 30px;font-size: 20px;"></i>
+                    <i class="fa fa-brands fa-google-plus-g" style="color: #ffffff;margin-right: 30px;font-size: 20px;"></i>
+                    <i class="fa fa-brands fa-linkedin-in" style="color: #ffffff;margin-right: 30px;font-size: 20px;"></i>
+                    <i class="fa fa-brands fa-twitter" style="color: #ffffff;margin-right: 30px;font-size: 20px;"></i>
+                </div>
+                </div> 
+            </div>
+            <hr class="border border-1 border-white m-4 mx-0">
+                <div class="d-flex justify-content-between flex-column flex-md-row text-white">
+                    <small>© 2022 canabid.com, all right reserved</small>
+                
+                <a href="#" class="text-white">Privacy policy</a>
+                </div>
+            </div>
+        </footer> 
+      </div>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
